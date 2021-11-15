@@ -2,10 +2,13 @@ server:
   port: 8501
   servlet:
     context-path: /cinemax
+
+trust-store: classpath:keystore/movie.p12
+trust-store-password: password
   
 spring:
   application:
     name: Movie-Seat-Booking
   cloud: 
     config:       fail-fast: true
-      uri: http:localhost:8502
+      uri: http://localhost:8502
