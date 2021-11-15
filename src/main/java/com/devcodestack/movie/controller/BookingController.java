@@ -31,7 +31,7 @@ public class BookingController {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		HttpEntity<Booking> entity = new HttpEntity<Booking>(booking, headers);
-		BookingStatus status = restTemplate.exchange("https://localhost:8500/cinemax/avail/update", HttpMethod.POST, entity, BookingStatus.class).getBody();
+		BookingStatus status = restTemplate.exchange("http://movie-seat-availability/cinemax/avail/update", HttpMethod.POST, entity, BookingStatus.class).getBody();
 		return ResponseEntity.ok(status);
 	}
 }

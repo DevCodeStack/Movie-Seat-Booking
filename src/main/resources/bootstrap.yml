@@ -2,9 +2,6 @@ server:
   port: 8501
   servlet:
     context-path: /cinemax
-
-trust-store: classpath:keystore/movie.p12
-trust-store-password: password
   
 spring:
   application:

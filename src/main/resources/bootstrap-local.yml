@@ -1,4 +1,4 @@
 spring: 
   cloud: 
     config: 
-      label: test
+      label: develop
