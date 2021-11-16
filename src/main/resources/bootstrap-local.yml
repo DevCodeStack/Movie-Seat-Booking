@@ -2,3 +2,21 @@ spring:
   cloud: 
     config: 
       label: develop
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 
+    password: 
+    properties: 
+      mail: 
+        smtp: 
+          auth: true
+          starttls: 
+            enable: true
+            
+mail: 
+  enabled: false
+  from: 
+  to: 
+  cc: 
+  bcc: 
