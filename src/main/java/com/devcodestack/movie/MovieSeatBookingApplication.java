@@ -17,8 +17,7 @@ public class MovieSeatBookingApplication {
 	
 	@Bean
 	@LoadBalanced
-	public RestTemplate getRestTemplate() {
+	public RestTemplate getRestTemplate() throws Exception {
 		return new RestTemplate();
 	}
-
 }
